@@ -1,0 +1,20 @@
+graph {
+    subgraph Sensors {
+        "Accelerometer" -> "Accerometer::\ninit()"
+        "Accelerometer" -> "Accerometer::\nread()"
+        "Accelerometer" -> "Accerometer::\ncalibrate()"
+        "Accelerometer" -> "Accerometer::\ncompensate_errors()"
+        "Magnetometer" -> "Magnetometer::\ninit()"
+        "Magnetometer" -> "Magnetometer::\nread()"
+        "Magnetometer" -> "Magnetometer::\ncalibrate()"
+        "Magnetometer" -> "Magnetometer::\ncompensate_errors()"
+        "Magnetometer" -> "Magnetometer::\nCompass_Heading()"
+        "Magnetometer" -> "Magnetometer::\nDrift_correction()"
+        "Gyroscope" -> "Gyroscope::\ninit()"
+        "Gyroscope" -> "Gyroscope::\nread()"
+        "Gyroscope" -> "Gyroscope::\ncalibrate()"
+        "Gyroscope" -> "Gyroscope::\ncompensate_errors()"
+        "Gyroscope" -> "Gyroscope::\nEuler_angles()"
+    }
+
+}
